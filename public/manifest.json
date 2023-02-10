@@ -1,25 +1,103 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+    "short_name": "PokemonPwa",
+    "name": "Pokemon-PWA",
+    "lang": "en",
+    "start_url": ".",
+    "background_color": "#00aae7",
+    "theme_color": "#00aae7",
+    "dir": "ltr",
+    "display": "standalone",
+    "orientation": "any",
+    "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/android-icon-192x192-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
-      "src": "logo192.png",
+      "src": "/apple-icon-180x180-seochecker-manifest-13009.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "180x180",
+      "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "/apple-icon-152x152-seochecker-manifest-13009.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "152x152",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon-144x144-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon-120x120-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "120x120",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon-114x114-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "114x114",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon-114x114-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-96x96-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-96x96-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/apple-icon-76x76-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "76x76",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon-72x72-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon-60x60-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "60x60",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon-57x57-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "57x57",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-32x32-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-16x16-seochecker-manifest-13009.png",
+      "type": "image/png",
+      "sizes": "16x16",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "prefer_related_applications": false
 }
