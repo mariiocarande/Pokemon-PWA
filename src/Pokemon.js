@@ -13,7 +13,7 @@ const Pokemon = ({ name }) => {
   }, [name]);
 
   return (
-    <div>{pokemon ? pokemon.name : 'Loading'}</div>
+    <div className="pokemon-information">{pokemon ? pokemon.name : 'Loading'}</div>
   )
 }
 

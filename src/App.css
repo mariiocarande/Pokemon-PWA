@@ -1,5 +1,9 @@
 .App {
+  display: flex;
   text-align: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +39,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pokedex {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  margin: 20px;
+  background-color: red;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+  width: 100%;
+}
+
+.divisor-line {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;  
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.pokemon-information {
+  display: flex;
+  height: 200rem;
+  align-items: center;
 }
