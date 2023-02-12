@@ -72,3 +72,12 @@
   align-items: center;
   flex-direction: column;
 }
+
+.pokedex .image {
+  display: flex;
+  background-color: #A29F9F;
+  width: 200px; 
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
