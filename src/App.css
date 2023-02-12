@@ -4,6 +4,8 @@
   color: white;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  background-color: black;
 }
 
 .App-logo {
@@ -51,12 +53,29 @@
   flex-direction: column;
   gap: 10px;
   padding: 40px;
-  width: 100%;
+}
+
+.divisor-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
 .divisor-line {
-  border: 1px solid black;
-  width: 100%;
+  border-left: 2px solid #000;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .divisor-container {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .divisor-line {
+    border-bottom:2px solid #000;
+    width: 100%;
+  }
 }
 
 .search-bar {
