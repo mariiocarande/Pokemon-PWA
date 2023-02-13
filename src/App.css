@@ -6,6 +6,9 @@
   justify-content: center;
   height: 100vh;
   background-color: black;
+  background-image: url("./images/pokeballs.jpeg");
+  background-size: contain;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -30,29 +33,17 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .pokedex {
   display: flex;
   align-items: center;
-  height: 500px;
+  height: 80vh;
   margin: 20px;
   background-color: #950730;
   border-radius: 5px;
   flex-direction: column;
   gap: 10px;
   padding: 40px;
+  border: 2px solid black;
 }
 
 .divisor-container {
@@ -73,7 +64,7 @@
   }
 
   .divisor-line {
-    border-bottom:2px solid #000;
+    border-bottom: 2px solid #000;
     width: 100%;
   }
 }
@@ -83,6 +74,7 @@
   gap: 20px;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
 
 .pokemon-information {
@@ -95,8 +87,61 @@
 .pokedex .image {
   display: flex;
   background-color: #A29F9F;
+  border-radius: 3px;
   width: 200px; 
   height: 200px;
   align-items: center;
   justify-content: center;
+}
+
+.ball-container {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  animation: shake 1.5s ease-in infinite;
+  animation-play-state: paused;
+  background-image: url('./images/pokeball_icon.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  5% {
+    transform: rotate(-5deg);
+  }
+
+  10% {
+    transform: rotate(5deg);
+  }
+
+  15% {
+    transform: rotate(-5deg);
+  }
+
+  20% {
+    transform: rotate(5deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ball-container:hover {
+  cursor: pointer;
+  animation-play-state: running;
+}
+
+input :focus {
+  border-color: none !important;
+  box-shadow: none !important;
 }
