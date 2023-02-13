@@ -12,6 +12,12 @@
   font-family: 'Oxygen';
 }
 
+@media (max-height: 500px) {
+  .App {
+    height: 150vh;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
