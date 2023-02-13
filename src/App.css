@@ -6,7 +6,7 @@
   justify-content: center;
   height: 100vh;
   background-color: black;
-  background-image: url("./images/pokeballs.jpeg");
+  background-image: url("./images/pokeballs_background_HD.png");
   background-size: contain;
   flex-direction: column;
   font-family: 'Oxygen';
@@ -25,15 +25,28 @@
 
 .pokedex {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   height: 80vh;
   margin: 20px;
   background-color: #950730;
-  border-radius: 5px;
+  border-radius: 5px 5px 5px 70px;
   flex-direction: column;
   gap: 10px;
   padding: 40px;
   border: 2px solid black;
+}
+
+@media (max-width: 700px) {
+  .pokedex {
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 700px) {
+  .rowstyle {
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .divisor-container {
@@ -47,7 +60,7 @@
   height: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .divisor-container {
     width: 100%;
     padding: 2rem 0;
@@ -69,9 +82,11 @@
 
 .pokemon-information {
   display: flex;
-  height: 200rem;
+  height: 35rem;
   align-items: center;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
 .pokedex .image {
@@ -83,6 +98,13 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+}
+
+.pokemon-image {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 0 0 0 50px;
+  background-color: white;
 }
 
 .ball-container {
@@ -135,4 +157,57 @@
 input :focus {
   border-color: none !important;
   box-shadow: none !important;
+}
+
+.pokemon-name {
+  display: flex;
+  flex-direction: column;
+  background: #3ab47d;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.line-one {
+  background: black;
+  width: 30px;
+  height: 4px;
+  display: flex;
+}
+
+.line-two {
+  background: black;
+  width: 30px;
+  height: 4px;
+  display: flex;
+}
+
+.lines {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.container-information {
+  background: grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: space-between;
+  height: 10rem;
+}
+
+.information {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
 }

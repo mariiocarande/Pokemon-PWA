@@ -14,20 +14,15 @@ const Pokemon = ({ name }) => {
 
   return (
     <div className="pokemon-information">
-      <div className='image'>
-        {pokemon &&
-          <img height="200px" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`} alt="pokemon" />}
+      <div className='pokemon-image'>
+        <div className='image'>
+          {pokemon &&
+            <img height="200px" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`} alt="pokemon" />}
+          </div>
       </div>
-      {pokemon && <div className='d-flex flex-column'>
-        <span>Name: {pokemon?.name}</span>
-        <span>Altura: {pokemon?.height / 10} m</span>
-        <span>Peso: {pokemon?.weight / 10} kg</span>
-        <span>Abilities:
-          <ul>
-            {pokemon?.abilities.map(ability => <li>{ability.ability.name}</li>)}
-          </ul>
-        </span>
-      </div>}
+      <div className='pokemon-name'>
+      {pokemon?.name.charAt(0).toUpperCase()}{pokemon?.name.slice(1)}
+      </div>
     </div>
   )
 }
