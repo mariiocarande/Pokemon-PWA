@@ -34,7 +34,15 @@ function App() {
             <Row className="overflow-hidden w-100">
               <Col xs={12} md={5}>
                   <div className="search-bar">
-                  <input className='form-control' placeholder="Name" id="myInput" type="text" value={search} onChange={handleChange} onKeyPress={handleKeyPress} />
+                  <input
+                    id="myInput"
+                    className='form-control'
+                    placeholder="Name"
+                    type="text"
+                    value={search}
+                    onChange={handleChange}
+                    onKeyPress={handleKeyPress}
+                  />
                   <div>
                     <div id="myBtn" className="ball-container pokeball-spin" onClick={handleClick} />
                   </div>

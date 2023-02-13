@@ -9,17 +9,7 @@
   background-image: url("./images/pokeballs.jpeg");
   background-size: contain;
   flex-direction: column;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Oxygen';
 }
 
 .App-header {
@@ -92,6 +82,7 @@
   height: 200px;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
 }
 
 .ball-container {
