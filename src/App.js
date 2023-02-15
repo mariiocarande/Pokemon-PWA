@@ -28,9 +28,9 @@ function App() {
 
   useEffect(() => {
     if (name) {
-      API.get(`/pokemon/${name}`)
+      API.get(`/pokemon/${name.toLowerCase()}`)
         .then((res) => setPokemon(res.data))
-        .catch((err) => console.log(err))
+        .catch((err) => alert('That Pokemon not exist!'))
     }
   }, [name]);
 
@@ -69,8 +69,6 @@ function App() {
               </div>
             </Col>
             
-            {/* TODO: @media max-height: 400px;
-    padding-bottom: 1rem; */}
             <Col xs={12} md={5} className="col-pokemon-information">
               <Row>
                 <div className="container-information">
@@ -101,6 +99,7 @@ function App() {
                   </>}
                 </div>
               </Row>
+
               <Row>
                 <div className="d-flex flex-direction-row justify-content-between">
                   <div className="pokemon-type">
