@@ -6,10 +6,10 @@
   justify-content: center;
   height: 100vh;
   background-color: black;
-  background-image: url("./images/pokeballs_background_HD.png");
+  background-image: url("./assets/images/pokeballs_background_HD.png");
   background-size: contain;
   flex-direction: column;
-  font-family: 'Oxygen';
+  font-family: 'Kanit';
 }
 
 @media (max-height: 500px) {
@@ -42,13 +42,13 @@
   border: 2px solid black;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .pokedex {
     overflow: scroll;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .rowstyle {
     overflow: hidden;
     width: 100%;
@@ -66,7 +66,7 @@
   height: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .divisor-container {
     width: 100%;
     padding: 2rem 0;
@@ -120,7 +120,7 @@
   position: relative;
   animation: shake 1.5s ease-in infinite;
   animation-play-state: paused;
-  background-image: url('./images/pokeball_icon.svg.png');
+  background-image: url('./assets/images/pokeball_icon.svg.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -208,12 +208,54 @@ label {
   background: grey;
   border: 1px solid black;
   border-radius: 10px;
-  justify-content: space-between;
   height: 10rem;
 }
 
 .information {
-  align-items: center;
-  justify-content: space-evenly;
   display: flex;
+  padding-left: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.abilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ability-item {
+  text-align: left;
+}
+
+.col-pokemon-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+@media (max-width: 768px) {
+  .col-pokemon-information {
+    max-height: 300px;
+    padding-bottom: 1rem;
+  }
+}
+
+.pokemon-type {
+  display: flex;
+  background: grey;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 3rem;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .lines {
+    display: none;
+  }
 }

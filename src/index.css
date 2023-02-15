@@ -7,6 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'Kanit';
+  src: url('./assets/fonts/Kanit/Kanit-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit Medium';
+  src: url('./assets/fonts/Kanit/Kanit-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit Bold';
+  src: url('./assets/fonts/Kanit/Kanit-Bold.ttf');
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
