@@ -49,7 +49,7 @@ const App = () => {
                   <input
                     id="myInput"
                     className='form-control'
-                    placeholder="Name"
+                    placeholder="Name/ID"
                     type="text"
                     value={search}
                     onChange={handleChange}
